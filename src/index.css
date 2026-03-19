@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 220 25% 97%;
+    --foreground: 220 15% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 12%;
+
+    /* Blue to Purple gradient theme */
+    --primary: 250 70% 60%;
+    --primary-foreground: 0 0% 100%;
+    
+    --primary-start: 220 90% 56%;
+    --primary-end: 280 80% 65%;
+
+    --secondary: 220 20% 95%;
+    --secondary-foreground: 220 15% 12%;
+
+    --muted: 220 15% 94%;
+    --muted-foreground: 220 10% 45%;
+
+    --accent: 280 80% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 20% 88%;
+    --input: 220 20% 90%;
+    --ring: 250 70% 60%;
+
+    --radius: 1.25rem;
+
+    /* Glassmorphism */
+    --glass-bg: 0 0% 100% / 0.7;
+    --glass-border: 220 20% 88% / 0.3;
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 8px hsl(220 15% 12% / 0.04);
+    --shadow-md: 0 4px 16px hsl(220 15% 12% / 0.08);
+    --shadow-lg: 0 8px 32px hsl(220 15% 12% / 0.12);
+    --shadow-glow: 0 0 40px hsl(250 70% 60% / 0.3);
+  }
+
+  .dark {
+    --background: 220 25% 8%;
+    --foreground: 220 15% 95%;
+
+    --card: 220 20% 12%;
+    --card-foreground: 220 15% 95%;
+
+    --popover: 220 20% 12%;
+    --popover-foreground: 220 15% 95%;
+
+    --primary: 250 70% 60%;
+    --primary-foreground: 0 0% 100%;
+    
+    --primary-start: 220 90% 56%;
+    --primary-end: 280 80% 65%;
+
+    --secondary: 220 20% 15%;
+    --secondary-foreground: 220 15% 95%;
+
+    --muted: 220 15% 18%;
+    --muted-foreground: 220 10% 65%;
+
+    --accent: 280 80% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 50.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 20% 20%;
+    --input: 220 20% 18%;
+    --ring: 250 70% 60%;
+
+    /* Glassmorphism for dark mode */
+    --glass-bg: 220 20% 12% / 0.7;
+    --glass-border: 220 20% 30% / 0.3;
+    
+    /* Shadows for dark mode */
+    --shadow-sm: 0 2px 8px hsl(0 0% 0% / 0.3);
+    --shadow-md: 0 4px 16px hsl(0 0% 0% / 0.4);
+    --shadow-lg: 0 8px 32px hsl(0 0% 0% / 0.5);
+    --shadow-glow: 0 0 40px hsl(250 70% 60% / 0.4);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-['Inter',sans-serif];
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    background: hsl(var(--glass-bg));
+    backdrop-filter: blur(12px);
+    border: 1px solid hsl(var(--glass-border));
+    box-shadow: var(--shadow-md);
+  }
+  
+  .gradient-primary {
+    background: linear-gradient(135deg, hsl(var(--primary-start)), hsl(var(--primary-end)));
+  }
+  
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(var(--primary-start)), hsl(var(--primary-end)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
