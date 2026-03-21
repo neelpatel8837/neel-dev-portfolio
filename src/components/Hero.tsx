@@ -25,11 +25,11 @@ const Hero = () => {
             </h1>
             
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-muted-foreground">
-              MERN Stack & React Native Developer
+              Full Stack Developer
             </h2>
             
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
-              I build fast, modern, scalable web & mobile applications with cutting-edge technologies.
+              I build fast, modern and scalable web applications with cutting-edge technologies.
             </p>
 
             <div className="flex flex-wrap gap-4">

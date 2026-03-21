@@ -30,8 +30,8 @@ const Contact: React.FC = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 px-4 bg-secondary/30">
-      <div className="container mx-auto max-w-6xl">
+    <section id="contact" className="py-20 bg-secondary/30">
+      <div className="w-full max-w-6xl mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Get In <span className="gradient-text">Touch</span>
