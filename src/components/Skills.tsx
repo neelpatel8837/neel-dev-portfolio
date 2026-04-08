@@ -11,7 +11,7 @@ const Skills = () => {
     {
       category: "Backend",
       icon: Server,
-      skills: ["Node.js", "Express.js", "REST APIs", "JWT Auth"],
+      skills: ["Node.js", "Express.js", "REST APIs", "JWT Auth", "Prisma ORM"],
       color: "from-green-500 to-emerald-500",
     },
     {
@@ -29,7 +29,7 @@ const Skills = () => {
     {
       category: "Tools",
       icon: Wrench,
-      skills: ["Git", "GitHub", "VS Code", "Postman"],
+      skills: ["Git", "GitHub","Postman","Swagger","Jest"],
       color: "from-indigo-500 to-purple-500",
     },
     {

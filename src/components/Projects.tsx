@@ -5,10 +5,17 @@ const Projects = () => {
   const projects = [
   {
     title: "GreenCart",
-    description: "Full-featured e-commerce platform.",
+    description: "Full featured e-commerce platform.",
     tech: ["React.js", "Node.js", "Express", "MongoDB", "JWT"],
     gradient: "from-emerald-500 to-teal-500",
     github: "https://github.com/neelpatel8837/greencart",
+  },
+  {
+    title: "Finance Dashboard API",
+    description: "Role based finance data management backend with access control and analytics.",
+    tech: ["Node.js", "Express.js", "MySQL","JWT","Swagger"],
+    gradient: "from-orange-500 to-red-500",
+    github: "https://github.com/neelpatel8837/Finance-Data-Processing-Access-Control-Backend",
   },
   {
     title: "Dev Event",
@@ -19,17 +26,10 @@ const Projects = () => {
   },
   {
     title: "Notes Manager",
-    description: "File‑based notes management system.",
+    description: "File based notes management system.",
     tech: ["Node.js", "Express", "EJS", "Tailwind CSS"],
     gradient: "from-purple-500 to-pink-500",
     github: "https://github.com/neelpatel8837/backendproject",
-  },
-  {
-    title: "Task Manager",
-    description: "Personal task organizer.",
-    tech: ["React", "TypeScript", "Tailwind"],
-    gradient: "from-orange-500 to-red-500",
-    github: "https://github.com/neelpatel8837/tsm",
   },
 ];
   return (

@@ -46,7 +46,7 @@ const Contact: React.FC = () => {
             <div>
               <h3 className="text-2xl font-semibold mb-4">Let's Connect</h3>
               <p className="text-muted-foreground mb-6">
-                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+                I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.
               </p>
 
               <div className="space-y-4">
